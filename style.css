@@ -1,0 +1,77 @@
+body{
+    background-color: midnightblue;
+    font-family:monospace ;
+}
+
+.glow{
+    color: #2de833;
+    font-size: 70px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+button{
+    font-size: 43px;
+   width:100%;
+    
+}
+button,button:hover{
+    box-shadow: 2px 2px 2px 2px greenyellow;
+}
+button:hover {
+    background-color: #16f81d;
+}
+
+button:active {
+    background-color: #2dde32;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+div{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+}
+#reload{
+    margin-top:2%;
+}
+#help{
+    height:50px;
+    background-color: #30a834 ;
+    margin-top: 3.9% ;
+    justify-content: flex-end;
+    width:100%;
+}
+a{
+    overflow: hidden;
+    text-decoration: none;
+    margin-right: 3%;
+}
+a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 10px #00e62a, 0 0 15px #00e651, 0 0 20px #00e651, 0 0 25px #00e651, 0 0 30px #00e658;
+    }
+    to {
+        
+        text-shadow: 0 0 10px #fff, 0 0 15px #4520ff, 0 0 20px #3831f8, 0 0 25px #4f1fff, 0 0 30px #3a0dec, 0 0 35px #4020f7, 0 0 40px #7041fb;
+    }
+    }
+@media screen and (max-width: 600px) {
+    .buttons,#rows {   
+      flex-direction: column;
+    }
+    #rows{
+        margin-top: 0%;
+    }
+    .glow{
+        font-size:49px;
+    }
+  }
+
+  
+  
